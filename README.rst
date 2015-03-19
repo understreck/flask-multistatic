@@ -15,7 +15,7 @@ Dependencies:
 The dependency list is therefore:
 
 - `python`_ (2.5 minimum)
-- `python-flask`_
+- `flask`_
 
 
 Usage:
