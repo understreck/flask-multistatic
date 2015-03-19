@@ -1,0 +1,12 @@
+*~
+*.pyc
+*.pyo
+*.swp
+*.mo 
+*.cfg
+dist
+*.egg-info
+build
+pylint.out
+nosetests.xml
+MANIFEST
