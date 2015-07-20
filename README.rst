@@ -58,6 +58,21 @@ example:
         `/static/<theme_name>/`.
 
 
+Production:
+-----------
+
+Note that this is most likely less efficient than having apache serve the static
+files itself, but even if you do that you might want to have multiple static
+directories and have apache fallback.
+
+In this case, you can use the example.conf file that is shipped as part of this
+repository.
+
+The example.conf file has an example configuration that will try to serve a file
+from an instance-specific theme directory, and only if the file was not found, fall
+back to the application default theme.
+
+
 License:
 --------
 
