@@ -2,7 +2,7 @@
 *.pyc
 *.pyo
 *.swp
-*.mo 
+*.mo
 *.cfg
 dist
 *.egg-info
