@@ -8,12 +8,12 @@ from setuptools import setup
 setup(
     name='flask-multistatic',
     description='Simple flask plugin to allow overriding static files',
-    version='1.0',
+    version='1.1',
     author='Pierre-Yves Chibon',
     author_email='pingou@pingoured.fr',
     license='GPLv3+',
-    download_url='https://pagure.io/releases/flask-multistatic/',
-    url='https://pagure.io/flask-multistatic',
+    download_url='https://github.com/understreck/flask-multistatic/releases/',
+    url='https://github.com/understreck/flask-multistatic',
     py_modules=['flask_multistatic'],
     install_requires=['flask'],
     classifiers=[
