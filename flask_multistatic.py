@@ -90,7 +90,7 @@ class MultiStaticFlask(Flask):
         for directory in folders:
             try:
                 return send_from_directory(
-                    directory, filename, cache_timeout=cache_timeout)
+                    directory, filename, max_age=cache_timeout)
             except NotFound:
                 pass
         raise NotFound()
