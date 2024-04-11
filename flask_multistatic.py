@@ -81,7 +81,7 @@ class MultiStaticFlask(Flask):
 
         # Ensure get_send_file_max_age is called in all cases.
         # Here, we ensure get_send_file_max_age is called for Blueprints.
-        cache_timeout = self.get_send_file_max_age(filename)
+        max_age = self.get_send_file_max_age(filename)
 
         folders = self.static_folder
         if isinstance(self.static_folder, string_types):
@@ -90,7 +90,7 @@ class MultiStaticFlask(Flask):
         for directory in folders:
             try:
                 return send_from_directory(
-                    directory, filename, cache_timeout=cache_timeout)
+                    directory, filename, max_age=max_age)
             except NotFound:
                 pass
         raise NotFound()
